@@ -29,7 +29,7 @@ Clone the repo and install dependencies:
 
 ```bash
 git clone https://github.com/RaghuGangoluNITW/rashomon-eeg-emotions-recognition.git
-cd rashomon-emotion
+cd rashomon-eeg-emotions-recognition
 pip install -r requirements.txt
 ```
 
