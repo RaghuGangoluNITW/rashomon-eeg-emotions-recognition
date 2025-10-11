@@ -1,75 +1,104 @@
-# Rashomon-Effect-Based Interpretable EEG Emotion Recognition
+Rashomon-Effect-Based Interpretable EEG Emotion Recognition: Supplementary Material
+Abstract
 
-This repository contains a modular, interpretable deep learning framework to classify emotions from EEG signals using the **Rashomon Effect**. The aim is not only to achieve high classification accuracy but also to explore **multiple plausible models** and provide insights into **why** and **how** decisions are made using SHAP, attention maps, and graph structures.
+This repository provides a modular and interpretable deep learning framework for EEG-based emotion recognition inspired by the Rashomon Effect.
+The framework aims to achieve high classification performance while exploring multiple plausible models and providing insights into model decisions using SHAP values, attention mechanisms, and graph-based feature analysis.
+We demonstrate the methodology on the DEAP dataset, employing wavelet-based preprocessing, handcrafted feature extraction, and graph-based deep learning.
 
-## Project Highlights
+Index Terms
 
-- EEG emotion recognition using the DEAP dataset.
-- Wavelet-based preprocessing and handcrafted feature extraction.
-- Deep learning with PyTorch and Torch-Geometric.
-- Dimensionality reduction and clustering using UMAP.
-- Interpretability using SHAP and visual analysis.
-- Rashomon effect modeling: multiple models explaining same data.
+EEG, Emotion Recognition, Rashomon Effect, Interpretability, Deep Learning, SHAP, Graph Neural Networks, DEAP Dataset.
 
-## Project Structure
+1. Introduction
 
-```
+Emotion recognition from EEG signals is critical for affective computing, human-computer interaction, and mental health monitoring. Traditional approaches focus solely on maximizing classification accuracy, often neglecting interpretability and model diversity.
+Inspired by the Rashomon Effect—the concept that multiple distinct models can explain the same dataset equally well—this work emphasizes understanding model decisions while maintaining competitive performance.
+Interpretability is achieved through SHAP-based feature attribution, attention map visualization, and graph representations of EEG channels.
+
+2. Repository Overview
+2.1 Structure
 rashomon-emotion/
-├── data/                     # EEG dataset (external)
-├── rashomon_emotion/        # Modular source code
-├── scripts/                 # Train, evaluate, visualize scripts
-├── tests/                   # Unit tests
-├── requirements.txt
-└── README.md
-```
+├── data/                     # External EEG dataset (DEAP)
+├── rashomon_emotion/         # Core modular source code
+├── scripts/                  # Training, evaluation, visualization
+├── tests/                    # Unit and integration tests
+├── requirements.txt          # Dependencies
+└── README.md                 # Supplementary material
 
-## Installation
-
-Clone the repo and install dependencies:
-
-```bash
+2.2 Installation
 git clone https://github.com/RaghuGangoluNITW/rashomon-eeg-emotions-recognition.git
 cd rashomon-eeg-emotions-recognition
 pip install -r requirements.txt
-```
 
-## Dataset
+3. Dataset
 
-This project uses the [DEAP dataset](http://www.eecs.qmul.ac.uk/mmv/datasets/deap/), a multimodal dataset for emotion analysis.  
-> You'll need to request access to download it.
+The DEAP dataset provides EEG, peripheral physiological signals, and video recordings for emotion analysis.
 
-Place the downloaded data in the `data/` folder.
+Modalities: 32-channel EEG, peripheral physiological signals, and facial video.
 
-## Usage
+Labels: Valence, arousal, dominance, and liking ratings.
 
-### Train model
-```bash
+Access: Must be requested from the dataset authors.
+Place downloaded data in the data/ directory.
+
+4. Methodology Summary
+4.1 Preprocessing
+
+Wavelet-based denoising to remove artifacts.
+
+Handcrafted feature extraction (power spectral density, bandpower features).
+
+4.2 Model Architecture
+
+Graph Neural Networks (GNNs) via PyTorch Geometric to capture inter-channel relationships.
+
+Multiple plausible models explored to implement the Rashomon Effect.
+
+4.3 Dimensionality Analysis
+
+UMAP is used for embedding EEG representations and clustering similar trials.
+
+4.4 Interpretability
+
+SHAP values quantify feature contributions.
+
+Attention maps highlight critical channels and time windows.
+
+Graph visualizations reveal spatial and functional relationships between electrodes.
+
+5. Experimental Setup
+5.1 Training
 python scripts/train.py
-```
 
-### Evaluate model
-```bash
+5.2 Evaluation
 python scripts/evaluate.py
-```
 
-### Visualize embeddings and SHAP values
-```bash
+5.3 Visualization
 python scripts/visualize.py
-```
 
-## Rashomon Effect?
 
-> The **Rashomon Effect** is the phenomenon where multiple models can explain the same data equally well.  
-> This project explores multiple interpretable models encouraging openness to diverse valid solutions in AI.
+This generates embedding plots, attention maps, and SHAP-based feature attributions.
 
-## Citation
+6. Rashomon Effect in EEG Emotion Recognition
 
-If you use this work in your research, please cite it as:
+The Rashomon Effect describes scenarios where multiple distinct models explain the same dataset with comparable accuracy.
+In this work, we demonstrate that diverse models can achieve similar performance on DEAP EEG data while providing complementary interpretability insights.
 
-```text
-Raghu Gangolu. Rashomon-Effect-Based Interpretable EEG Emotion Recognition. GitHub, 2025.
-```
+7. Reproducibility Statement
 
-## License
+Dependencies: Listed in requirements.txt.
 
-This project is open-sourced under the MIT License.
+Data: DEAP dataset, external download required.
+
+Scripts: All code for training, evaluation, and visualization is modularized under scripts/.
+
+Random Seeds: Settable in configuration files for reproducibility.
+
+Hardware: Compatible with GPU and CPU, PyTorch 2.x recommended.
+
+8. Citation
+Raghu Gangolu, "Rashomon-Effect-Based Interpretable EEG Emotion Recognition," GitHub Repository, 2025.
+
+9. License
+
+This repository is released under the MIT License.
