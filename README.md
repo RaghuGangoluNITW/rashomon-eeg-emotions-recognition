@@ -40,7 +40,7 @@ This project uses the [DEAP dataset](http://www.eecs.qmul.ac.uk/mmv/datasets/dea
 
 Place the downloaded data in the `data/` folder.
 
-## ⚙️ Usage
+## Usage
 
 ### Train model
 ```bash
