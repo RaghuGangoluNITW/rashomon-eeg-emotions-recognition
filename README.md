@@ -28,7 +28,7 @@ rashomon-emotion/
 Clone the repo and install dependencies:
 
 ```bash
-https://github.com/RaghuGangoluNITW/rashomon-eeg-emotions-recognition.git
+git clone https://github.com/RaghuGangoluNITW/rashomon-eeg-emotions-recognition.git
 cd rashomon-emotion
 pip install -r requirements.txt
 ```
