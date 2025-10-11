@@ -1,5 +1,5 @@
 
-# Rashomon-Effect-Based Interpretable EEG Emotion Recognition: Supplementary Material
+# Rashomon-Effect-Based Interpretable EEG Emotion Recognition:
 
 ## Abstract
 This repository provides a modular and interpretable deep learning framework for **EEG-based emotion recognition** inspired by the *Rashomon Effect*.  
