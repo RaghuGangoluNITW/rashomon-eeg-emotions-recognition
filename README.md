@@ -67,9 +67,9 @@ python scripts/visualize.py
 If you use this work in your research, please cite it as:
 
 ```text
-[Author's name]. Rashomon-Effect-Based Interpretable EEG Emotion Recognition. GitHub, 2025.
+Raghu Gangolu. Rashomon-Effect-Based Interpretable EEG Emotion Recognition. GitHub, 2025.
 ```
 
-## 📜 License
+## License
 
 This project is open-sourced under the MIT License.
