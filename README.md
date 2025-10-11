@@ -60,7 +60,7 @@ python scripts/visualize.py
 ## Rashomon Effect?
 
 > The **Rashomon Effect** is the phenomenon where multiple models can explain the same data equally well.  
-> This project explores multiple interpretable models — encouraging openness to diverse valid solutions in AI.
+> This project explores multiple interpretable models encouraging openness to diverse valid solutions in AI.
 
 ## Citation
 
