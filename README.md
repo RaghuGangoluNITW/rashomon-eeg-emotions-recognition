@@ -6,19 +6,19 @@ This repository provides a modular and interpretable deep learning framework for
 The framework aims to achieve **high classification performance** while exploring **multiple plausible models** and providing insights into model decisions using **SHAP values**, **attention mechanisms**, and **graph-based feature analysis**.  
 We demonstrate the methodology on the **DEAP dataset**, employing **wavelet-based preprocessing**, **handcrafted feature extraction**, and **graph-based deep learning**.
 
----
+
 
 ## Index Terms
 EEG, Emotion Recognition, Rashomon Effect, Interpretability, Deep Learning, SHAP, Graph Neural Networks, DEAP Dataset.
 
----
+
 
 ## 1. Introduction
 Emotion recognition from EEG signals is critical for affective computing, human-computer interaction, and mental health monitoring. Traditional approaches focus solely on maximizing classification accuracy, often neglecting interpretability and model diversity.  
 Inspired by the *Rashomon Effect*—the concept that multiple distinct models can explain the same dataset equally well—this work emphasizes **understanding model decisions** while maintaining competitive performance.  
 Interpretability is achieved through **SHAP-based feature attribution**, **attention map visualization**, and **graph representations of EEG channels**.
 
----
+
 
 ## 2. Repository Overview
 
@@ -40,7 +40,7 @@ cd rashomon-eeg-emotions-recognition
 pip install -r requirements.txt
 ```
 
----
+
 
 ## 3. Dataset
 The **DEAP dataset** provides EEG, peripheral physiological signals, and video recordings for emotion analysis.  
@@ -49,7 +49,7 @@ The **DEAP dataset** provides EEG, peripheral physiological signals, and video r
 - **Access**: Must be requested from the dataset authors.  
 Place downloaded data in the `data/` directory.
 
----
+
 
 ## 4. Methodology Summary
 
@@ -69,7 +69,7 @@ Place downloaded data in the `data/` directory.
 - **Attention maps** highlight critical channels and time windows.  
 - **Graph visualizations** reveal spatial and functional relationships between electrodes.
 
----
+
 
 ## 5. Experimental Setup
 
@@ -89,13 +89,13 @@ python scripts/visualize.py
 ```
 This generates embedding plots, attention maps, and SHAP-based feature attributions.
 
----
+
 
 ## 6. Rashomon Effect in EEG Emotion Recognition
 > The Rashomon Effect describes scenarios where **multiple distinct models explain the same dataset with comparable accuracy**.  
 In this work, we demonstrate that **diverse models** can achieve similar performance on DEAP EEG data while providing **complementary interpretability insights**.
 
----
+
 
 ## 7. Reproducibility Statement
 - **Dependencies**: Listed in `requirements.txt`.  
@@ -104,14 +104,14 @@ In this work, we demonstrate that **diverse models** can achieve similar perform
 - **Random Seeds**: Settable in configuration files for reproducibility.  
 - **Hardware**: Compatible with GPU and CPU, PyTorch 2.x recommended.
 
----
+
 
 ## 8. Citation
 ```
 Raghu Gangolu, "Rashomon-Effect-Based Interpretable EEG Emotion Recognition," GitHub Repository, 2025.
 ```
 
----
+
 
 ## 9. License
 This repository is released under the **MIT License**.
