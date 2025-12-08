@@ -15,7 +15,7 @@ EEG, Emotion Recognition, Rashomon Effect, Interpretability, Deep Learning, SHAP
 
 ## 1. Introduction
 Emotion recognition from EEG signals is critical for affective computing, human-computer interaction, and mental health monitoring. Traditional approaches focus solely on maximizing classification accuracy, often neglecting interpretability and model diversity.  
-Inspired by the *Rashomon Effect*—the concept that multiple distinct models can explain the same dataset equally well—this work emphasizes **understanding model decisions** while maintaining competitive performance.  
+Inspired by the *Rashomon Effect*, the concept that multiple distinct models can explain the same dataset equally well this work emphasizes **understanding model decisions** while maintaining competitive performance.  
 Interpretability is achieved through **SHAP-based feature attribution**, **attention map visualization**, and **graph representations of EEG channels**.
 
 
