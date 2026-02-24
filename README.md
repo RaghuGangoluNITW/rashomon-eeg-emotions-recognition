@@ -1,4 +1,4 @@
-# Rashomon Sets Unveiled: Interpretable Multi-Graph EEG Emotion Recognition
+# Interpretable Multi-Graph EEG Emotion Recognition
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.12%2B-orange.svg)](https://pytorch.org/)
@@ -37,7 +37,7 @@ Katsigiannis & Ramzan (2018). 14-channel EEG, 23 subjects, Valence/Arousal/Domin
 ## Installation
 
 ```bash
-git clone https://github.com/<your-username>/rashomon-eeg-emotions-recognition.git
+git clone https://github.com/RaghuGangoluNITW/rashomon-eeg-emotions-recognition.git
 cd rashomon-eeg-emotions-recognition
 pip install -r requirements.txt
 ```
