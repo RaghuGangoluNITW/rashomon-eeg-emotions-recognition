@@ -1,0 +1,75 @@
+{
+  "dataset": "DREAMER",
+  "num_subjects": 23,
+  "num_feature_methods": 2,
+  "num_graph_types": 5,
+  "rashomon_pipelines": 10,
+  "feature_methods": [
+    "wavelet",
+    "lorentzian"
+  ],
+  "graph_methods": [
+    "plv",
+    "coherence",
+    "correlation",
+    "mi",
+    "aec"
+  ],
+  "overall_mean_accuracy": 0.6062801932367148,
+  "overall_std_accuracy": 0.10349896273250506,
+  "mean_pdi_across_features": 0.0018652095487513261,
+  "per_feature_summaries": {
+    "lorentzian": {
+      "dataset": "DREAMER",
+      "num_subjects": 23,
+      "mean_accuracy": 0.6062801932367148,
+      "std_accuracy": 0.10349896273250506,
+      "median_accuracy": 0.6666666666666666,
+      "min_accuracy": 0.3333333333333333,
+      "max_accuracy": 0.7777777777777778,
+      "pdi": 0.0018652095487513261,
+      "feature_method": "lorentzian",
+      "graph_methods": [
+        "plv",
+        "coherence",
+        "correlation",
+        "mi",
+        "aec"
+      ],
+      "num_graph_types": 5,
+      "hidden_dim": 64,
+      "num_epochs": 100,
+      "device": "cuda",
+      "seed": 42,
+      "per_subject_accuracies": [
+        0.5,
+        0.7222222222222222,
+        0.5555555555555556,
+        0.7777777777777778,
+        0.6666666666666666,
+        0.5555555555555556,
+        0.7222222222222222,
+        0.6666666666666666,
+        0.5555555555555556,
+        0.3333333333333333,
+        0.6666666666666666,
+        0.5,
+        0.4444444444444444,
+        0.5555555555555556,
+        0.7222222222222222,
+        0.6666666666666666,
+        0.6666666666666666,
+        0.6666666666666666,
+        0.5,
+        0.6666666666666666,
+        0.6666666666666666,
+        0.6111111111111112,
+        0.5555555555555556
+      ]
+    }
+  },
+  "hidden_dim": 64,
+  "num_epochs": 100,
+  "device": "cuda",
+  "seed": 42
+}
