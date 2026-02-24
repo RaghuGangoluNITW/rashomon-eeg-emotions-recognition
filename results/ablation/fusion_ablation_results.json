@@ -1,0 +1,118 @@
+{
+  "ablation_study": "fusion_layer",
+  "dataset": "DEAP",
+  "test_subject": 10,
+  "protocol": "LOSO",
+  "results": [
+    {
+      "run": 1,
+      "feature": "wavelet",
+      "fusion_type": "none",
+      "test_subject": 10,
+      "train_time_s": 245.6,
+      "test_accuracy": 0.5417,
+      "test_f1": 0.7022
+    },
+    {
+      "run": 2,
+      "feature": "wavelet",
+      "fusion_type": "late",
+      "test_subject": 10,
+      "train_time_s": 291.4,
+      "test_accuracy": 0.5417,
+      "test_f1": 0.6204
+    },
+    {
+      "run": 3,
+      "feature": "wavelet",
+      "fusion_type": "learnable",
+      "test_subject": 10,
+      "train_time_s": 300.2,
+      "test_accuracy": 0.525,
+      "test_f1": 0.6528
+    },
+    {
+      "run": 4,
+      "feature": "lorentzian",
+      "fusion_type": "none",
+      "test_subject": 10,
+      "train_time_s": 246.0,
+      "test_accuracy": 0.5417,
+      "test_f1": 0.7022
+    },
+    {
+      "run": 5,
+      "feature": "lorentzian",
+      "fusion_type": "late",
+      "test_subject": 10,
+      "train_time_s": 278.2,
+      "test_accuracy": 0.5417,
+      "test_f1": 0.7022
+    },
+    {
+      "run": 6,
+      "feature": "lorentzian",
+      "fusion_type": "learnable",
+      "test_subject": 10,
+      "train_time_s": 293.6,
+      "test_accuracy": 0.5417,
+      "test_f1": 0.7022
+    }
+  ],
+  "summary": [
+    {
+      "feature": "lorentzian",
+      "fusion_type": "late",
+      "acc_mean": 0.5417,
+      "acc_std": NaN,
+      "f1_mean": 0.7022,
+      "f1_std": NaN,
+      "time_mean": 278.2
+    },
+    {
+      "feature": "lorentzian",
+      "fusion_type": "learnable",
+      "acc_mean": 0.5417,
+      "acc_std": NaN,
+      "f1_mean": 0.7022,
+      "f1_std": NaN,
+      "time_mean": 293.6
+    },
+    {
+      "feature": "lorentzian",
+      "fusion_type": "none",
+      "acc_mean": 0.5417,
+      "acc_std": NaN,
+      "f1_mean": 0.7022,
+      "f1_std": NaN,
+      "time_mean": 246.0
+    },
+    {
+      "feature": "wavelet",
+      "fusion_type": "late",
+      "acc_mean": 0.5417,
+      "acc_std": NaN,
+      "f1_mean": 0.6204,
+      "f1_std": NaN,
+      "time_mean": 291.4
+    },
+    {
+      "feature": "wavelet",
+      "fusion_type": "learnable",
+      "acc_mean": 0.525,
+      "acc_std": NaN,
+      "f1_mean": 0.6528,
+      "f1_std": NaN,
+      "time_mean": 300.2
+    },
+    {
+      "feature": "wavelet",
+      "fusion_type": "none",
+      "acc_mean": 0.5417,
+      "acc_std": NaN,
+      "f1_mean": 0.7022,
+      "f1_std": NaN,
+      "time_mean": 245.6
+    }
+  ]
+}

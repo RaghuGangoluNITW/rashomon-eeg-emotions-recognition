@@ -1,0 +1,7 @@
+run,feature,fusion_type,test_subject,train_time_s,test_accuracy,test_f1
+1,wavelet,none,10,245.6,0.5417,0.7022
+2,wavelet,late,10,291.4,0.5417,0.6204
+3,wavelet,learnable,10,300.2,0.525,0.6528
+4,lorentzian,none,10,246.0,0.5417,0.7022
+5,lorentzian,late,10,278.2,0.5417,0.7022
+6,lorentzian,learnable,10,293.6,0.5417,0.7022

@@ -1,0 +1,272 @@
+[
+  {
+    "subject": 1,
+    "preproc": "wavelet",
+    "hidden_dim": 32,
+    "accuracy": 0.525,
+    "f1": 0.3614754098360656,
+    "train_time_s": 1.616396188735962,
+    "history": "ablation_out_deap\\history_sub1_wavelet_hid32.json"
+  },
+  {
+    "subject": 1,
+    "preproc": "wavelet",
+    "hidden_dim": 64,
+    "accuracy": 0.525,
+    "f1": 0.3614754098360656,
+    "train_time_s": 0.013999462127685547,
+    "history": "ablation_out_deap\\history_sub1_wavelet_hid64.json"
+  },
+  {
+    "subject": 1,
+    "preproc": "wavelet",
+    "hidden_dim": 128,
+    "accuracy": 0.475,
+    "f1": 0.3059322033898305,
+    "train_time_s": 0.010999917984008789,
+    "history": "ablation_out_deap\\history_sub1_wavelet_hid128.json"
+  },
+  {
+    "subject": 1,
+    "preproc": "dwt_bands",
+    "hidden_dim": 32,
+    "accuracy": 0.475,
+    "f1": 0.3059322033898305,
+    "train_time_s": 0.008998394012451172,
+    "history": "ablation_out_deap\\history_sub1_dwt_bands_hid32.json"
+  },
+  {
+    "subject": 1,
+    "preproc": "dwt_bands",
+    "hidden_dim": 64,
+    "accuracy": 0.525,
+    "f1": 0.3614754098360656,
+    "train_time_s": 0.007999420166015625,
+    "history": "ablation_out_deap\\history_sub1_dwt_bands_hid64.json"
+  },
+  {
+    "subject": 1,
+    "preproc": "dwt_bands",
+    "hidden_dim": 128,
+    "accuracy": 0.475,
+    "f1": 0.3059322033898305,
+    "train_time_s": 0.009552240371704102,
+    "history": "ablation_out_deap\\history_sub1_dwt_bands_hid128.json"
+  },
+  {
+    "subject": 8,
+    "preproc": "wavelet",
+    "hidden_dim": 32,
+    "accuracy": 0.45,
+    "f1": 0.2793103448275862,
+    "train_time_s": 0.006044149398803711,
+    "history": "ablation_out_deap\\history_sub8_wavelet_hid32.json"
+  },
+  {
+    "subject": 8,
+    "preproc": "wavelet",
+    "hidden_dim": 64,
+    "accuracy": 0.45,
+    "f1": 0.2793103448275862,
+    "train_time_s": 0.0067746639251708984,
+    "history": "ablation_out_deap\\history_sub8_wavelet_hid64.json"
+  },
+  {
+    "subject": 8,
+    "preproc": "wavelet",
+    "hidden_dim": 128,
+    "accuracy": 0.55,
+    "f1": 0.3903225806451613,
+    "train_time_s": 0.007998228073120117,
+    "history": "ablation_out_deap\\history_sub8_wavelet_hid128.json"
+  },
+  {
+    "subject": 8,
+    "preproc": "dwt_bands",
+    "hidden_dim": 32,
+    "accuracy": 0.6,
+    "f1": 0.5969309462915601,
+    "train_time_s": 0.0170285701751709,
+    "history": "ablation_out_deap\\history_sub8_dwt_bands_hid32.json"
+  },
+  {
+    "subject": 8,
+    "preproc": "dwt_bands",
+    "hidden_dim": 64,
+    "accuracy": 0.45,
+    "f1": 0.2793103448275862,
+    "train_time_s": 0.007014036178588867,
+    "history": "ablation_out_deap\\history_sub8_dwt_bands_hid64.json"
+  },
+  {
+    "subject": 8,
+    "preproc": "dwt_bands",
+    "hidden_dim": 128,
+    "accuracy": 0.55,
+    "f1": 0.3903225806451613,
+    "train_time_s": 0.011786937713623047,
+    "history": "ablation_out_deap\\history_sub8_dwt_bands_hid128.json"
+  },
+  {
+    "subject": 16,
+    "preproc": "wavelet",
+    "hidden_dim": 32,
+    "accuracy": 0.625,
+    "f1": 0.48076923076923084,
+    "train_time_s": 0.014308452606201172,
+    "history": "ablation_out_deap\\history_sub16_wavelet_hid32.json"
+  },
+  {
+    "subject": 16,
+    "preproc": "wavelet",
+    "hidden_dim": 64,
+    "accuracy": 0.625,
+    "f1": 0.48076923076923084,
+    "train_time_s": 0.006823539733886719,
+    "history": "ablation_out_deap\\history_sub16_wavelet_hid64.json"
+  },
+  {
+    "subject": 16,
+    "preproc": "wavelet",
+    "hidden_dim": 128,
+    "accuracy": 0.375,
+    "f1": 0.20454545454545453,
+    "train_time_s": 0.00786137580871582,
+    "history": "ablation_out_deap\\history_sub16_wavelet_hid128.json"
+  },
+  {
+    "subject": 16,
+    "preproc": "dwt_bands",
+    "hidden_dim": 32,
+    "accuracy": 0.425,
+    "f1": 0.3048567435359888,
+    "train_time_s": 0.01099705696105957,
+    "history": "ablation_out_deap\\history_sub16_dwt_bands_hid32.json"
+  },
+  {
+    "subject": 16,
+    "preproc": "dwt_bands",
+    "hidden_dim": 64,
+    "accuracy": 0.625,
+    "f1": 0.48076923076923084,
+    "train_time_s": 0.010999202728271484,
+    "history": "ablation_out_deap\\history_sub16_dwt_bands_hid64.json"
+  },
+  {
+    "subject": 16,
+    "preproc": "dwt_bands",
+    "hidden_dim": 128,
+    "accuracy": 0.375,
+    "f1": 0.20454545454545453,
+    "train_time_s": 0.008998632431030273,
+    "history": "ablation_out_deap\\history_sub16_dwt_bands_hid128.json"
+  },
+  {
+    "subject": 24,
+    "preproc": "wavelet",
+    "hidden_dim": 32,
+    "accuracy": 0.55,
+    "f1": 0.3903225806451613,
+    "train_time_s": 0.015355825424194336,
+    "history": "ablation_out_deap\\history_sub24_wavelet_hid32.json"
+  },
+  {
+    "subject": 24,
+    "preproc": "wavelet",
+    "hidden_dim": 64,
+    "accuracy": 0.6,
+    "f1": 0.6,
+    "train_time_s": 0.006997585296630859,
+    "history": "ablation_out_deap\\history_sub24_wavelet_hid64.json"
+  },
+  {
+    "subject": 24,
+    "preproc": "wavelet",
+    "hidden_dim": 128,
+    "accuracy": 0.45,
+    "f1": 0.2793103448275862,
+    "train_time_s": 0.006452083587646484,
+    "history": "ablation_out_deap\\history_sub24_wavelet_hid128.json"
+  },
+  {
+    "subject": 24,
+    "preproc": "dwt_bands",
+    "hidden_dim": 32,
+    "accuracy": 0.65,
+    "f1": 0.6,
+    "train_time_s": 0.01605510711669922,
+    "history": "ablation_out_deap\\history_sub24_dwt_bands_hid32.json"
+  },
+  {
+    "subject": 24,
+    "preproc": "dwt_bands",
+    "hidden_dim": 64,
+    "accuracy": 0.55,
+    "f1": 0.3903225806451613,
+    "train_time_s": 0.008021116256713867,
+    "history": "ablation_out_deap\\history_sub24_dwt_bands_hid64.json"
+  },
+  {
+    "subject": 24,
+    "preproc": "dwt_bands",
+    "hidden_dim": 128,
+    "accuracy": 0.475,
+    "f1": 0.3320366132723112,
+    "train_time_s": 0.008138418197631836,
+    "history": "ablation_out_deap\\history_sub24_dwt_bands_hid128.json"
+  },
+  {
+    "subject": 32,
+    "preproc": "wavelet",
+    "hidden_dim": 32,
+    "accuracy": 0.5,
+    "f1": 0.3333333333333333,
+    "train_time_s": 0.0076656341552734375,
+    "history": "ablation_out_deap\\history_sub32_wavelet_hid32.json"
+  },
+  {
+    "subject": 32,
+    "preproc": "wavelet",
+    "hidden_dim": 64,
+    "accuracy": 0.5,
+    "f1": 0.3333333333333333,
+    "train_time_s": 0.005748271942138672,
+    "history": "ablation_out_deap\\history_sub32_wavelet_hid64.json"
+  },
+  {
+    "subject": 32,
+    "preproc": "wavelet",
+    "hidden_dim": 128,
+    "accuracy": 0.5,
+    "f1": 0.3333333333333333,
+    "train_time_s": 0.009999513626098633,
+    "history": "ablation_out_deap\\history_sub32_wavelet_hid128.json"
+  },
+  {
+    "subject": 32,
+    "preproc": "dwt_bands",
+    "hidden_dim": 32,
+    "accuracy": 0.55,
+    "f1": 0.53125,
+    "train_time_s": 0.008998632431030273,
+    "history": "ablation_out_deap\\history_sub32_dwt_bands_hid32.json"
+  },
+  {
+    "subject": 32,
+    "preproc": "dwt_bands",
+    "hidden_dim": 64,
+    "accuracy": 0.525,
+    "f1": 0.38660209846650523,
+    "train_time_s": 0.007071971893310547,
+    "history": "ablation_out_deap\\history_sub32_dwt_bands_hid64.json"
+  },
+  {
+    "subject": 32,
+    "preproc": "dwt_bands",
+    "hidden_dim": 128,
+    "accuracy": 0.5,
+    "f1": 0.3333333333333333,
+    "train_time_s": 0.012691974639892578,
+    "history": "ablation_out_deap\\history_sub32_dwt_bands_hid128.json"
+  }
+]

@@ -1,0 +1,7 @@
+feature,fusion_type,acc_mean,acc_std,f1_mean,f1_std,time_mean
+lorentzian,late,0.5417,,0.7022,,278.2
+lorentzian,learnable,0.5417,,0.7022,,293.6
+lorentzian,none,0.5417,,0.7022,,246.0
+wavelet,late,0.5417,,0.6204,,291.4
+wavelet,learnable,0.525,,0.6528,,300.2
+wavelet,none,0.5417,,0.7022,,245.6
