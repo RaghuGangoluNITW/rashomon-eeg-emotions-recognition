@@ -1,7 +1,4 @@
-"""
-Optimized Full LOSO Experiment - Uses simpler feature approach for speed
-This version completes in ~2-4 hours instead of days
-"""
+
 
 import numpy as np
 import torch
@@ -326,3 +323,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
