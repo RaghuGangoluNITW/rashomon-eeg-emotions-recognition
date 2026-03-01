@@ -14,7 +14,7 @@ This work introduces a **Rashomon-set-aware Graph Convolutional Network (GCN)** 
 
 Key contributions:
 - **Multi-graph topology**: 6 EEG connectivity graphs (PLV, Pearson, coherence, MI, PLI, AEC) fused via learnable weights
-- **Rashomon set construction**: ε-accuracy threshold over LOSO cross-validation identifies 17–31% (DEAP) and 17–23% (DREAMER) of evaluated pipelines as near-optimal
+- **Rashomon set construction**: ε-accuracy threshold over LOSO cross-validation identifies 17-31% (DEAP) and 17-23% (DREAMER) of evaluated pipelines as near-optimal
 - **PDI interpretability**: Regions of high predictive diversity correspond to emotionally ambiguous or noisy brain states, validated with SHAP and GNNExplainer
 - **Cross-dataset validation**: Evaluated on DEAP (32 subjects, 40 trials) and DREAMER (23 subjects, 18 clips) with LOSO protocol
 
@@ -203,7 +203,7 @@ Given N evaluated pipelines (feature set × graph topology combinations), the Ra
 R(ε) = { f ∈ F : Accuracy(f) ≥ (1 - ε) × Accuracy(f*) }
 ```
 
-where `f*` is the best-performing pipeline. `ε` is set so that 17–31% of pipelines qualify on DEAP and 17–23% on DREAMER. See `rashomon_emotion/rashomon_runner.py` for implementation.
+where `f*` is the best-performing pipeline. `ε` is set so that 17-31% of pipelines qualify on DEAP and 17-23% on DREAMER. See `rashomon_emotion/rashomon_runner.py` for implementation.
 
 ### PDI (Predictive Diversity Index)
 
