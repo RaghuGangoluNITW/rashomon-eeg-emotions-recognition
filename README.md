@@ -1,16 +1,16 @@
-# Interpretable Multi-Graph EEG Emotion Recognition
+# An Interpretable Deep Learning Model for EEG Emotion Recognition Using the Rashomon Effect
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.12%2B-orange.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**"An Interpretable Deep Learning Model for EEG Emotion Recognition Using the Rashomon Effect"** (under review).
+**"An Interpretable Deep Learning Model for EEG Emotion Recognition Using the Rashomon Effect"** 
 
 ---
 
 ## Overview
 
-This work introduces a **Rashomon-set-aware Graph Convolutional Network (GCN)** framework for EEG-based emotion recognition. Rather than returning a single "best" model, we identify the full set of near-optimal models (the Rashomon set) and leverage their disagreement — quantified via the **Predictive Diversity Index (PDI)** — as a rich interpretability signal.
+This work introduces a **Rashomon-set-aware Graph Convolutional Network (GCN)** framework for EEG-based emotion recognition. Rather than returning a single "best" model, we identify the full set of near-optimal models (the Rashomon set) and leverage their disagreement quantified via the **Predictive Diversity Index (PDI)** as a rich interpretability signal.
 
 Key contributions:
 - **Multi-graph topology**: 6 EEG connectivity graphs (PLV, Pearson, coherence, MI, PLI, AEC) fused via learnable weights
@@ -48,7 +48,7 @@ pip install -r requirements.txt
 
 ## Quick Start
 
-### DEAP — Full LOSO Rashomon pipeline
+### DEAP Full LOSO Rashomon pipeline
 ```bash
 python scripts/run_full_rashomon_loso.py \
     --data_path data/deap/data_preprocessed_python/ \
@@ -56,7 +56,7 @@ python scripts/run_full_rashomon_loso.py \
     --label valence
 ```
 
-### DREAMER — Full LOSO pipeline
+### DREAMER Full LOSO pipeline
 ```bash
 python scripts/run_full_loso_dreamer.py \
     --data_path data/dreamer/DREAMER.mat \
@@ -160,7 +160,7 @@ GitHub_Release/
 │   │   ├── dreamer_f1_top5_boxplots.png
 │   │   └── ...
 │   └── interactive/                  # 11 interactive 3D HTML visualizations
-│       ├── index.html                # Navigation page — open this first
+│       ├── index.html                # Navigation page open this first
 │       ├── shap_3d_valence.html
 │       ├── pdi_3d_surface.html
 │       ├── rashomon_set_3d.html
@@ -219,19 +219,19 @@ High PDI = emotionally ambiguous input. Computed in `scripts/compute_pdi.py`.
 
 ## Reproducing Paper Results
 
-### Table 1 — DEAP LOSO accuracies
+### Table 1 DEAP LOSO accuracies
 ```bash
 python scripts/run_full_rashomon_loso.py --data_path data/deap/ --label valence
 python scripts/run_full_rashomon_loso.py --data_path data/deap/ --label arousal
 python scripts/aggregate_deap_results.py --results_dir results/deap_loso/
 ```
 
-### Table 2 — DREAMER LOSO accuracies
+### Table 2 DREAMER LOSO accuracies
 ```bash
 python scripts/run_full_loso_dreamer.py --data_path data/dreamer/DREAMER.mat
 ```
 
-### Table 3 — Fusion ablation
+### Table 3 Fusion ablation
 ```bash
 python scripts/run_fusion_ablation_aligned.py
 ```
@@ -258,7 +258,7 @@ pytest tests/ -v
 
 ## Key Results
 
-### DEAP (32 subjects, 40 trials each — from `results/deap/paper_ready_results.csv`)
+### DEAP (32 subjects, 40 trials each from `results/deap/paper_ready_results.csv`)
 
 | Label     | Accuracy | F1     | Test samples |
 |-----------|----------|--------|--------------|
@@ -268,7 +268,7 @@ pytest tests/ -v
 
 Metrics computed over a 3-subject LOSO test fold × 40 trials (120 samples) across 48 pipelines (8 feature sets × 6 graph topologies). Results are derived from prediction pickle files in `Rahomon_DEAP/Pickles/`.
 
-### DREAMER (23 subjects, 18 clips each — from `results/dreamer_loso/loso_summary.json`)
+### DREAMER (23 subjects, 18 clips each from `results/dreamer_loso/loso_summary.json`)
 
 | Metric           | Value              |
 |------------------|--------------------|
