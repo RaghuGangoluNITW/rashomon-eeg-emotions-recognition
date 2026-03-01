@@ -263,7 +263,7 @@ pytest tests/ -v
 | Label     | Accuracy | F1     | Test samples |
 |-----------|----------|--------|--------------|
 | Arousal   | 80.0%    | 88.9%  | 120          |
-| Valence   | 74.2–77.5% | 84.6–87.0% | 120    |
+| Valence   | 74.2-77.5% | 84.6-87.0% | 120    |
 | Dominance | 85.8%    | 92.4%  | 120          |
 
 Metrics computed over a 3-subject LOSO test fold × 40 trials (120 samples) across 48 pipelines (8 feature sets × 6 graph topologies). Results are derived from prediction pickle files in `Rahomon_DEAP/Pickles/`.
@@ -274,7 +274,7 @@ Metrics computed over a 3-subject LOSO test fold × 40 trials (120 samples) acro
 |------------------|--------------------|
 | Mean accuracy    | 60.6% (±10.4%)     |
 | Median accuracy  | 66.7%              |
-| Range            | 33.3%–77.8%        |
+| Range            | 33.3%-77.8%        |
 | Feature set      | Wavelet            |
 | Graph topologies | PLV, Coherence, Correlation, MI, AEC |
 | Subjects         | 23 (LOSO)          |
