@@ -3,6 +3,9 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.12%2B-orange.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.bspc.2026.110140-blue.svg)](https://doi.org/10.1016/j.bspc.2026.110140)
+
+📄 **Published Paper**: https://doi.org/10.1016/j.bspc.2026.110140
 
 **"An Interpretable Deep Learning Model for EEG Emotion Recognition Using the Rashomon Effect"** 
 
@@ -290,3 +293,26 @@ MIT License. See [LICENSE](LICENSE) for details.
 ## Contact
 
 For questions about the code or experiments, please open a GitHub issue.
+
+## 📄 Paper (Published)
+
+**An Interpretable Deep Learning Model for EEG Emotion Recognition Using the Rashomon Effect**
+
+Published in *Biomedical Signal Processing and Control (BSPC), 2026*.
+
+🔗 DOI: https://doi.org/10.1016/j.bspc.2026.110140
+
+
+### 📚 Citation
+
+If you use this work, please cite:
+
+```bibtex
+@article{gangolu2026rashomon,
+  title={An Interpretable Deep Learning Model for EEG Emotion Recognition Using the Rashomon Effect},
+  author={Gangolu, Raghu and others},
+  journal={Biomedical Signal Processing and Control},
+  year={2026},
+  doi={10.1016/j.bspc.2026.110140}
+}
+
