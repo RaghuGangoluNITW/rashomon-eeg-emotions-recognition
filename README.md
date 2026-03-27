@@ -308,11 +308,16 @@ Published in *Biomedical Signal Processing and Control (BSPC), 2026*.
 If you use this work, please cite:
 
 ```bibtex
-@article{gangolu2026rashomon,
-  title={An Interpretable Deep Learning Model for EEG Emotion Recognition Using the Rashomon Effect},
-  author={Gangolu, Raghu and others},
-  journal={Biomedical Signal Processing and Control},
-  year={2026},
-  doi={10.1016/j.bspc.2026.110140}
+@article{GANGOLU2026110140,
+title = {An interpretable deep learning model for EEG emotion recognition using the Rashomon effect},
+journal = {Biomedical Signal Processing and Control},
+volume = {120},
+pages = {110140},
+year = {2026},
+issn = {1746-8094},
+doi = {https://doi.org/10.1016/j.bspc.2026.110140},
+url = {https://www.sciencedirect.com/science/article/pii/S1746809426006944},
+author = {Raghu Gangolu and K.V. Kadambari},
+keywords = {EEG, Emotion recognition, Rashomon effect, Graph neural networks, Explainability, SHAP},
+abstract = {Traditional EEG emotion recognition pipelines typically focus on identifying a single best-performing model, implicitly assuming that such a model provides unique scientific insight. This work embraces this perspective by constructing Rashomon set (R) of high-performing deep graph neural networks (GNNs) for EEG-based emotion recognition across two benchmark datasets: DEAP (32 channels, 32 subjects) and DREAMER (14 channels, 23 subjects). Beyond classification, we quantify interpretability diversity using SHAP-based node-lobe attributions and introduce the Pairwise Dissimilarity Index (PDI) to measure explanation-level divergence across Rashomon set (R). The proposed Rashomon-GNN achieves state-of-the-art LOSO performance on the DEAP dataset: 90.52%, 91.96%, and 92.20% F1 for arousal, valence, and dominance respectively. Rashomon-GNN achieves absolute F1 improvements of +0.90% on arousal and +1.94% on valence, while requiring nearly an order of magnitude fewer parameters (5926 vs. 74,400). Against shallower baselines (TSception, EEGNet), improvements exceed 27 percentage points in F1, confirming consistent superiority across a diverse set of competing methods. On DREAMER, the framework achieves 59.8%, 58.1%, and 60.6% F1, demonstrating generalization despite the substantially reduced channel density (14 vs. 32 electrodes). Cross-dataset analysis reveals that while DEAP benefits from richer spatial resolution, both datasets exhibit substantial Rashomon diversity (17%–31% of pipelines within top-5% performance on DEAP; 17%–23% on DREAMER), confirming that model multiplicity is a dataset-agnostic structural property of the combinatorial GNN pipeline space. SHAP and PDI analyses reveal that top-performing models converge on distinct but neuroscientifically meaningful EEG regions, whereas low-performing models exhibit redundant or diffuse attributions. Rashomon set diversity remains stable across ϵ∈{0.01,0.10}. Overall, this study demonstrates that multiple, computationally efficient GNN pipelines can achieve high accuracy while offering complementary and interpretable neurophysiological insights which opens new directions for trustworthy, robust, and explanation-aware affective computing.}
 }
-
